@@ -1,2 +1,2 @@
 # CyberCatalyst
- A robust and dynamic toolkit designed to expedite and streamline your cybersecurity tasks. Its modular structure allows you to combat digital threats with precision and efficiency, providing a comprehensive solution for cybersecurity professionals and enthusiasts alike.
+ A dynamic web development toolkit designed with a strong emphasis on security. This project showcases the construction of robust web applications, with a focus on implementing advanced cybersecurity measures. It's a comprehensive demonstration of secure web development practices for professionals and enthusiasts alike
