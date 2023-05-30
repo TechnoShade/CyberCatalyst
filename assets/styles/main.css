@@ -1,11 +1,7 @@
-/* Custom Fonts */
-@import url('https://fonts.googleapis.com/css2?family=YourSelectedFont');
-
-/* Base Styles */
 body {
   background: linear-gradient(to right, #0f0f0f 0%, #1b1b1b 100%);
   color: #0ff;
-  font-family: 'Oxanium', print;
+  font-family: 'Futura', sans-serif;
 }
 
 h1, h2, h3 {
@@ -43,5 +39,3 @@ a:hover {
   color: #fff;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
-
-
