@@ -46,15 +46,42 @@ a:hover {
 
 /* Animations */
 h1 {
-  animation: rotate 5s infinite linear;
+  animation: glitch 2s infinite;
 }
 
-@keyframes rotate {
+@keyframes glitch {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-10px);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  30% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  90% {
+    transform: translateX(-10px);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateX(0);
   }
 }
 
@@ -64,4 +91,20 @@ h2 {
 
 h2:hover {
   color: red;
+}
+
+h3 {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
