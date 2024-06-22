@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -17,11 +18,59 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
-        <!-- Add your contact page content here -->
+        <section class="contact-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out to us through any of the following channels.</p>
+        </section>
+        <section class="contact-form-section">
+            <div class="contact-form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <section class="contact-info-section">
+            <div class="contact-info">
+                <h2>Our Office</h2>
+                <p>123 Business Street, Suite 456<br>City, State, 12345</p>
+                <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@cybercatalyst.com</p>
+            </div>
+            <div class="contact-map">
+                <h2>Find Us Here</h2>
+                <div id="map"></div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2023 Your Website</p>
+        <p>&copy; 2023 Cyber Catalyst Solutions</p>
     </footer>
+
+    <script>
+        function initMap() {
+            var officeLocation = { lat: 37.7749, lng: -122.4194 }; // Example coordinates (San Francisco)
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: officeLocation
+            });
+            var marker = new google.maps.Marker({
+                position: officeLocation,
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </body>
 </html>
