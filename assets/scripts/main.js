@@ -1,12 +1,11 @@
 // Function to convert a scroll position to a RGB color
 function scrollPositionToRGB(scrollTop) {
-  // These are RGB values for colors that feel "cyberpunk"
-  // Change these to any colors that fit your desired theme
+  // These are RGB values for colors that fit a professional and sophisticated theme
   const colors = [
-    {r: 0, g: 255, b: 255},  // Cyan
-    {r: 255, g: 0, b: 255},  // Magenta
-    {r: 255, g: 70, b: 0},   // Orange
-    {r: 0, g: 255, b: 0}     // Green
+    {r: 70, g: 130, b: 180},  // SteelBlue
+    {r: 169, g: 169, b: 169}, // DarkGray
+    {r: 255, g: 255, b: 255}, // White
+    {r: 0, g: 0, b: 139}      // DarkBlue
   ];
 
   // How far the user can scroll
