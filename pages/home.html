@@ -3,25 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Mission Statement</title>
     <link rel="stylesheet" href="assets/styles/main.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #121212 0%, #2a2a2a 100%);
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1, h2, h3 {
+            color: #ff6f61;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        a {
+            color: #2196f3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #64b5f6;
+        }
+
+        .button {
+            background: linear-gradient(to right, #2196f3 0%, #64b5f6 100%);
+            border: none;
+            color: #fff;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 6px 4px;
+            transition: background 0.4s ease, transform 0.4s ease;
+            cursor: pointer;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .button:hover {
+            background: linear-gradient(to right, #64b5f6 0%, #2196f3 100%);
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="mission.html">Mission Statement</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Welcome to the Home Page</h1>
-        <!-- Add your home page content here -->
+        <div class="container">
+            <h1>Welcome to Cyber Catalyst Solutions</h1>
+            <p>At Cyber Catalyst Solutions, our mission is to create a digital world where innovation and security go hand in hand, all while embodying the core principles of family values, integrity, and community. We believe in fostering a supportive and trustworthy environment for businesses and individuals alike.</p>
+            <p>We are committed to providing secure, innovative digital marketing and agent services that respect and reflect the values we hold dear. Our approach is rooted in the belief that every business, like every family, deserves the best care, attention, and protection.</p>
+            <p>Our team is dedicated to delivering exceptional service with a personal touch, ensuring that our clients not only succeed but also feel supported throughout their journey. We prioritize building lasting relationships based on trust, transparency, and mutual respect.</p>
+            <p>Join us in our mission to create a future where business success and personal values coexist harmoniously. Together, we can build a digital landscape that honors the human principles of trust, respect, and community.</p>
+            <img src="assets/images/your-image-file.png" alt="Community and business collaboration">
+        </div>
     </main>
     <footer>
-        <p>&copy; 2023 Your Website</p>
+        <div class="container">
+            <p>&copy; 2023 Cyber Catalyst Solutions</p>
+        </div>
     </footer>
-</body>
-</html>
+
+    <script>
+        // Function to convert a scroll position to a RGB color
+        function scrollPositionToRGB(scrollTop) {
+          // These are RGB values for colors that fit a professional and sophisticated theme
+          const colors = [
+            {r: 70, g: 130, b: 180},  // SteelBlue
+            {r: 169, g: 169, b: 169}, // DarkGray
+            {r: 255, g: 255, b: 255}, // White
+            {r: 0, g: 0, b: 139}      // DarkBlue
+          ];
+
+          // How far the user can scroll
+          const scrollRange = document.documentElement.scrollHeight - window.innerHeight;
+
+          // The color index to use based on scroll position
+          const colorIndex = Math.min(Math.floor(scrollTop / scrollRange * colors.length), colors.length - 2);
+
+          // How far the user has scrolled within the current color section
+          const intraSectionScroll = scrollTop % (scrollRange / colors.length);
+
+          // The proportion of the way through the current color section
+          const lerpAmount = intraSectionScroll / (scrollRange
+
